@@ -79,7 +79,7 @@
     
    ![image](https://github.com/imransecrets/kafka/assets/8496861/84d47625-86fc-4050-aaa8-b997f50b1ae0)
 
-      ls
+      98de6cf9f7f0:/$ ls /opt/kafka/bin
 
    ![image](https://github.com/imransecrets/kafka/assets/8496861/136bb37d-9ce9-44a9-98ee-9c257cd0a870)
    For getting help
