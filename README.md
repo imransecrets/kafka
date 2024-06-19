@@ -119,6 +119,20 @@
 
    ![image](https://github.com/imransecrets/kafka/assets/8496861/5f735bc0-5be3-436d-9708-0790bc8cbc38)
 
+   ## Consumer Groups
+  * Check whether any group was created for previously created consumers or not
+
+          98de6cf9f7f0:/opt/kafka/bin$ /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+   
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/853d0e28-4f2f-4bc8-b17b-2c9b94219044)
+
+      98de6cf9f7f0:/opt/kafka/bin$ /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group hello
+
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/ed72d466-dbaf-4ebe-8e6b-71f352adf46c)
+
+   
+
+
 
    
 
