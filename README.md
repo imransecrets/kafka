@@ -72,5 +72,14 @@
 
 ## Now execute the container command prompt
    docker exec -it [container id complete of 1st f letters] bin/bash
+   
    ![image](https://github.com/imransecrets/kafka/assets/8496861/d17fac28-39fd-481c-bec9-bf9ca4808dcb)
+    
+    cd opt/kafka/bin
+    
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/84d47625-86fc-4050-aaa8-b997f50b1ae0)
+
+
+   
+
 
