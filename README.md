@@ -95,6 +95,9 @@
    ![image](https://github.com/imransecrets/kafka/assets/8496861/c04a214f-c189-4dda-8408-123fb3538dea)
    For deleting TOPIC 
       /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic my-topic
+
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/d04bef18-9497-413d-ae45-dcb7b6e691aa)
+
    
 
 
