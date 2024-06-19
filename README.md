@@ -109,6 +109,17 @@
 
    ![image](https://github.com/imransecrets/kafka/assets/8496861/69df6611-b9ac-4f29-a9c1-56d0ca4e9184)
 
+   Now open new window and again go to command prompt to docker container
+
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/1a399c15-043d-4ed5-a0fe-d80935443459)
+
+   Now create consummer for same topic
+
+      98de6cf9f7f0:/opt/kafka/bin$ /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning
+
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/5f735bc0-5be3-436d-9708-0790bc8cbc38)
+
+
    
 
 
