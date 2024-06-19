@@ -139,6 +139,11 @@
 
      ![image](https://github.com/imransecrets/kafka/assets/8496861/f17391ba-c600-488f-8add-a1c71fd11cdb)
 
+     again check the groups
+     98de6cf9f7f0:/opt/kafka/bin$ /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+     ![image](https://github.com/imransecrets/kafka/assets/8496861/2482bd8d-202f-4a12-8adf-48a474b7a44b)
+
+
      
 
 
