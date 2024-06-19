@@ -94,9 +94,20 @@
 
    ![image](https://github.com/imransecrets/kafka/assets/8496861/c04a214f-c189-4dda-8408-123fb3538dea)
    For deleting TOPIC 
+   
       /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic my-topic
 
    ![image](https://github.com/imransecrets/kafka/assets/8496861/d04bef18-9497-413d-ae45-dcb7b6e691aa)
+   For describing Topic
+   
+      98de6cf9f7f0:/$ /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic my-topic
+
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/cea3b11f-2600-4a77-ae13-751647bb2efb)
+   Now create producers for some topic and write down some material
+         
+      98de6cf9f7f0:/opt/kafka/bin$ /opt/kafka/bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic my-topic
+
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/69df6611-b9ac-4f29-a9c1-56d0ca4e9184)
 
    
 
