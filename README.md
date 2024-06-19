@@ -59,13 +59,14 @@
    docker pull apache/kafka:3.7.0 (we use this on)
 3. Open Docker Desktop search for Apache/kafka:3.7.0 and install
 
+
 ## image created now run the image
     docker run -d -p 9092:9092 --name kafka [image id complete or 1st 4 letters]
 
     container created and running you can check
     docker ps 
 
-    ![image](https://github.com/imransecrets/kafka/assets/8496861/de2e7c3e-d870-4d63-9fda-85023839620a)
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/de2e7c3e-d870-4d63-9fda-85023839620a)
 
 
 
