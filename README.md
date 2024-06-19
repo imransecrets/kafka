@@ -130,6 +130,20 @@
 
    ![image](https://github.com/imransecrets/kafka/assets/8496861/ed72d466-dbaf-4ebe-8e6b-71f352adf46c)
 
+   * Note :- if you create a new consumer with the same group then it will replace the previous consumer with a new one
+
+     1st one created with same group name hello 
+     ![image](https://github.com/imransecrets/kafka/assets/8496861/2029c78f-dbba-44aa-943d-2e337e95c5e2)
+
+     2nd one created with same group name will receive messages from where 1st one finished
+
+     ![image](https://github.com/imransecrets/kafka/assets/8496861/f17391ba-c600-488f-8add-a1c71fd11cdb)
+
+     
+
+
+   
+
    
 
 
