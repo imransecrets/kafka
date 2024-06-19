@@ -50,4 +50,20 @@
 ### Rules
 
 - One consumer can consume multiple partitions.
--
+
+# DOCKER INSTALLATION
+1. IN WINDOW
+   Download and install from the official website for window and use (but we are not using this)
+2. THROUGH DOCKER
+   Get the docker image
+   docker pull apache/kafka:3.7.0 (we use this on)
+3. Open Docker Desktop search for Apache/kafka:3.7.0 and install
+
+## image created now run the image
+    docker run -d -p 9092:9092 --name kafka [image id complete or 1st 4 letters]
+
+    container created and running you can check
+    docker ps 
+    ![image](https://github.com/imransecrets/kafka/assets/8496861/236e2058-d89f-48c2-b740-23eb3b25ac75)
+
+## 
