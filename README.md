@@ -64,6 +64,9 @@
 
     container created and running you can check
     docker ps 
-    ![image](https://github.com/imransecrets/kafka/assets/8496861/236e2058-d89f-48c2-b740-23eb3b25ac75)
+
+    ![image](https://github.com/imransecrets/kafka/assets/8496861/de2e7c3e-d870-4d63-9fda-85023839620a)
+
+
 
 ## 
