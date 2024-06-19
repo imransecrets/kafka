@@ -82,7 +82,20 @@
       ls
 
    ![image](https://github.com/imransecrets/kafka/assets/8496861/136bb37d-9ce9-44a9-98ee-9c257cd0a870)
+   For getting help
+        
+         98de6cf9f7f0:/opt/kafka/bin$  /opt/kafka/bin/kafka-topics.sh --help
+   now go to https://kafka.apache.org/documentation/ and copy some command part
 
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/3bd5317a-8906-4bba-851e-68308ea8240e)
+   For creating TOPIC
+         
+         /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic my-topic
+
+   ![image](https://github.com/imransecrets/kafka/assets/8496861/c04a214f-c189-4dda-8408-123fb3538dea)
+   For deleting TOPIC 
+      /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic my-topic
    
+
 
 
