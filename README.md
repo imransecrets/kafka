@@ -59,7 +59,9 @@
    docker pull apache/kafka:3.7.0 (we use this on)
 3. Open Docker Desktop search for Apache/kafka:3.7.0 and install
 
-
+         https://hub.docker.com/r/apache/kafka/tags
+         docker pull apache/kafka:3.7.0
+   
 ## image created now run the image
     docker run -d -p 9092:9092 --name kafka [image id complete or 1st 4 letters]
 
