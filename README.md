@@ -62,6 +62,10 @@
    https://hub.docker.com/r/apache/kafka/tags
 
          docker pull apache/kafka:3.7.0
+
+   * DOCUMENTATION
+   https://github.com/apache/kafka/blob/trunk/docker/examples/README.md
+   https://kafka.apache.org/documentation/#docker
    
 ## image created now run the image
     docker run -d -p 9092:9092 --name kafka [image id complete or 1st 4 letters]
