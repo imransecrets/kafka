@@ -192,7 +192,7 @@
    https://github.com/provectus/kafka-ui
    and copy code as below
    include code depends code  ie  depends_on:
-                                    - serviceName: broker
+                                    - broker
                                     networks:
                                          default:
                                            driver: bridge
@@ -208,7 +208,7 @@
                   - ~/kui/config.yml:/etc/kafkaui/dynamic_config.yaml
          #enter below codes after copying the code
                 depends_on:
-                  - serviceName: broker
+                  - broker
          networks:
            default:
              driver: bridge
