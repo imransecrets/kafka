@@ -18,6 +18,8 @@
 
 - Kafka has high throughput and low storage requirements.
 - Queries are not possible directly in Kafka.
+
+
 - Databases, on the other hand, have low throughput but high storage capacity and support querying.
 
 # Kafka Concepts
@@ -151,6 +153,67 @@
      
      ![image](https://github.com/imransecrets/kafka/assets/8496861/2482bd8d-202f-4a12-8adf-48a474b7a44b)
 
+
+# Provectuslabs kafka ui yml file | Kafka
+   
+   https://github.com/provectus/kafka-ui
+   
+  * get yml file
+    
+   https://github.com/apache/kafka/blob/trunk/docker/examples/README.md
+   https://github.com/apache/kafka/blob/trunk/docker/examples/docker-compose-files/single-node/plaintext/docker-compose.yml
+   copy code and set correct image
+
+      version: '2'
+      services:
+        broker:
+          image: apache/kafka:3.7.0
+          hostname: broker
+          container_name: broker
+          ports:
+            - '9092:9092'
+          environment:
+            KAFKA_NODE_ID: 1
+            KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT'
+            KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT_HOST://localhost:9092,PLAINTEXT://broker:19092'
+            KAFKA_PROCESS_ROLES: 'broker,controller'
+            KAFKA_CONTROLLER_QUORUM_VOTERS: '1@broker:29093'
+            KAFKA_LISTENERS: 'CONTROLLER://:29093,PLAINTEXT_HOST://:9092,PLAINTEXT://:19092'
+            KAFKA_INTER_BROKER_LISTENER_NAME: 'PLAINTEXT'
+            KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+            CLUSTER_ID: '4L6g3nShT-eMCtK--X86sw'
+            KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+            KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+            KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+            KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+            KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+   
+   now go to below link
+   https://github.com/provectus/kafka-ui
+   and copy code as below
+   include code depends code  ie  depends_on:
+                                    - serviceName: broker
+                                    networks:
+                                         default:
+                                           driver: bridge
+                                           
+            kafka-ui:
+                container_name: kafka-ui
+                image: provectuslabs/kafka-ui:latest
+                ports:
+                  - 8080:8080
+                environment:
+                  DYNAMIC_CONFIG_ENABLED: 'true'
+                volumes:
+                  - ~/kui/config.yml:/etc/kafkaui/dynamic_config.yaml
+         #enter below codes after copying the code
+                depends_on:
+                  - serviceName: broker
+         networks:
+           default:
+             driver: bridge
+
+   
 
      
 
